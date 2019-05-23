@@ -1,0 +1,34 @@
+﻿@{
+    ViewBag.Title = "ASPNET MVC Reporting";
+}
+
+<div class="jumbotron">
+    <h1>ASPNET MVC Reporting</h1>
+    <p class="lead">This application can be used to demonstrate about how to implement RDLC reporing using asp.net mvc framework.</p>
+    <p><a href="https://docs.microsoft.com/en-us/sql/reporting-services/application-integration/using-the-webforms-reportviewer-control?view=sql-server-2017" 
+          class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Oder History (PDF)</h2>
+        <p>
+            Generate all the customers order history. Just Click belew button to generate Pdf report.
+        </p>
+        <p><a class="btn btn-default" href="/home/ExportOrderHistory?reportingType=DownloadPdf"> <i class="fa fa-file-pdf-o"></i> PDF</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Oder History (EXCEL)</h2>
+        <p>
+            Generate all the customers order history. Just Click belew button to generate Excel report.
+        </p>
+        <p><a class="btn btn-default" href="/home/ExportOrderHistory?reportingType=DownloadExcel"> <i class="fa fa-file-excel-o"></i> EXCEL</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Oder History (WORD)</h2>
+        <p>
+            Generate all the customers order history. Just Click belew button to generate MS Word report.
+        </p>
+        <p><a class="btn btn-default" href="/home/ExportOrderHistory?reportingType=DownloadWord"> <i class="fa fa-file-word-o"></i> WORD</a></p>
+    </div>
+</div>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="ASPNETMVCReportingDataSet" targetNamespace="http://tempuri.org/ASPNETMVCReportingDataSet.xsd" xmlns:mstns="http://tempuri.org/ASPNETMVCReportingDataSet.xsd" xmlns="http://tempuri.org/ASPNETMVCReportingDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" GeneratorFunctionsComponentClassName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" UserFunctionsComponentName="QueriesTableAdapter" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CustomerManagementDbConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CustomerManagementDbConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CustomerManagementDbConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="ASPNETMVCReportingDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ASPNETMVCReportingDataSet" msprop:Generator_UserDSName="ASPNETMVCReportingDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Order_GetOrderListing" msprop:Generator_TableClassName="Order_GetOrderListingDataTable" msprop:Generator_TableVarName="tableOrder_GetOrderListing" msprop:Generator_TablePropName="Order_GetOrderListing" msprop:Generator_RowDeletingName="Order_GetOrderListingRowDeleting" msprop:Generator_RowChangingName="Order_GetOrderListingRowChanging" msprop:Generator_RowEvHandlerName="Order_GetOrderListingRowChangeEventHandler" msprop:Generator_RowDeletedName="Order_GetOrderListingRowDeleted" msprop:Generator_UserTableName="Order_GetOrderListing" msprop:Generator_RowChangedName="Order_GetOrderListingRowChanged" msprop:Generator_RowEvArgName="Order_GetOrderListingRowChangeEvent" msprop:Generator_RowClassName="Order_GetOrderListingRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="OderNumber" msprop:Generator_ColumnVarNameInTable="columnOderNumber" msprop:Generator_ColumnPropNameInRow="OderNumber" msprop:Generator_ColumnPropNameInTable="OderNumberColumn" msprop:Generator_UserColumnName="OderNumber">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CustomerName" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnCustomerName" msprop:Generator_ColumnPropNameInRow="CustomerName" msprop:Generator_ColumnPropNameInTable="CustomerNameColumn" msprop:Generator_UserColumnName="CustomerName" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="101" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ProductName" msprop:Generator_ColumnVarNameInTable="columnProductName" msprop:Generator_ColumnPropNameInRow="ProductName" msprop:Generator_ColumnPropNameInTable="ProductNameColumn" msprop:Generator_UserColumnName="ProductName">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="250" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="DiscountPrice" msprop:Generator_ColumnVarNameInTable="columnDiscountPrice" msprop:Generator_ColumnPropNameInRow="DiscountPrice" msprop:Generator_ColumnPropNameInTable="DiscountPriceColumn" msprop:Generator_UserColumnName="DiscountPrice" type="xs:decimal" />
+              <xs:element name="TotalAmount" msprop:Generator_ColumnVarNameInTable="columnTotalAmount" msprop:Generator_ColumnPropNameInRow="TotalAmount" msprop:Generator_ColumnPropNameInTable="TotalAmountColumn" msprop:Generator_UserColumnName="TotalAmount" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
